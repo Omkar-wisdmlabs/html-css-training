@@ -30,6 +30,21 @@ nav{
     padding-top: 10px;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 .row1 .header-logo{
     width: 40px;
     height: 40px;
@@ -235,3 +250,120 @@ footer{
     height: 70px;
 }
 
+
+
+/* MEDIA QUERIES BEGIN HERE */
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    nav {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 20px;
+    }
+    
+    .intro {
+        width: 80vw;
+        left: 10vw;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .intro h2 {
+        font-size: 36px;
+    }
+    
+    .carousel-img {
+        grid-column: 1;
+        margin: 20px 0;
+    }
+    
+    .carousel-img img {
+        width: 350px;
+        height: 200px;
+    }
+    
+    .info .product-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .product-card {
+        width: 45%;
+        margin: 0;
+    }
+    
+    .quote-text {
+        width: 90%;
+        font-size: 30px;
+        padding: 0 20px;
+    }
+    
+    .quote-author {
+        width: 90%;
+    }
+    
+    .sign-up {
+        width: 90vw;
+        left: 5vw;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #1f2937;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 15px;
+    }
+
+    .row1 {
+        position: relative;
+    }
+    
+    /* Update existing mobile styles */
+    .row1 ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .row1 li {
+        margin: 16px 0;
+    }
+}
