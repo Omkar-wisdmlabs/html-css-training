@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RazorPay</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
     
     <nav>
        
         <div class="row1">
-            <div class="header-logo">RazorPay</div>
+            <div><a href="#"><img src="./public/nav-logo.png" alt="" class="header-logo"></a></div>
             <ul>
                 <li><a href="#info">Info</a></li>
                 <li><a href="#quote">Quote</a></li>
-                <li><a href="#sign-up">Sign Up</a></li>
+                <li><a href="#signup">Sign Up</a></li>
             
             </ul>
         </div>
@@ -27,14 +28,14 @@
         </div>
 
         <div class="carousel-img">
-            <img src="./public/logo.png" alt="RazorpayImage" width="400px" height="250px">
+            <img src="./public/logo.png" alt="RazorpayImage" width="450px" height="250px">
         </div>
     </nav>
 
     <main>
 
 
-        <section class="info" #info>
+        <section class="info" id="info">
             <h2>Top Products</h2>
 
             <div class="product-cards">
@@ -59,7 +60,7 @@
                 </div>
         </section>
 
-        <section class="quote" #quote>
+        <section class="quote" id="quote">
             
             <div class="quote-text">
                 "The best investment you can make is in your business. With RazorPay, streamline your payments and watch your business grow effortlessly."
@@ -68,10 +69,10 @@
             <div class="quote-author">- Mr. John Keppler</div>
         </section>
 
-        <section class="sign-up">
-            Call to Action. It's time!
-            <br>
-            Sign up for our product by clicking the button
+        <section class="sign-up" id="signup">
+            <p>Call to Action. It's time! <br><span>Sign up for our product by clicking the button</span></p>
+    
+            <span></span>
             <button class="sign-up-btn">Sign Up</button>
 
         </section>
