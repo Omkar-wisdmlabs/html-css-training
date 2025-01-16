@@ -9,28 +9,30 @@
 <body>
     
     <nav>
-        <div class="header-logo">RazorPay</div>
-        <ul>
-            <li><a href="#info">Info</a></li>
-            <li><a href="#quote">Quote</a></li>
-            <li><a href="#sign-up">Sign Up</a></li>
-        
-        </ul>
+       
+        <div class="row1">
+            <div class="header-logo">RazorPay</div>
+            <ul>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#quote">Quote</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+            
+            </ul>
+        </div>
+
+        <div class="intro">
+            <h2>Welcome to RazorPay</h2>
+            <p>RazorPay is a leading payment gateway solution that allows businesses to accept, process, and disburse payments with ease.</p>
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+
+        <div class="carousel-img">
+            <img src="./public/logo.png" alt="RazorpayImage" width="400px" height="250px">
+        </div>
     </nav>
 
     <main>
-        <section class="carousel">
 
-            <div class="intro">
-                <h2>Welcome to RazorPay</h2>
-                <p>RazorPay is a leading payment gateway solution that allows businesses to accept, process, and disburse payments with ease.</p>
-                <button class="sign-up">Sign Up</button>
-            </div>
-
-            <div class="carousel-img">
-                <img src="./public/logo.png" alt="RazorpayImage">
-            </div>
-        </section>
 
         <section class="info" #info>
             <h2>Top Products</h2>
@@ -58,15 +60,19 @@
         </section>
 
         <section class="quote" #quote>
-            <h2>Financial Quote</h2>
-            <blockquote>
+            
+            <div class="quote-text">
                 "The best investment you can make is in your business. With RazorPay, streamline your payments and watch your business grow effortlessly."
-            </blockquote>
+            </div>
+    
+            <div class="quote-author">- Mr. John Keppler</div>
         </section>
 
         <section class="sign-up">
-            Call to Action
-            <button>Sign Up</button>
+            Call to Action. It's time!
+            <br>
+            Sign up for our product by clicking the button
+            <button class="sign-up-btn">Sign Up</button>
 
         </section>
     </main>
