@@ -19,7 +19,7 @@ nav{
     gap: 10px; /* Optional spacing between grid items */
     background-color: #1f2937;
     color: white;
-    min-height: 450px;
+    min-height: 500px;
 }
 
 .row1{
@@ -116,7 +116,7 @@ ul{
 
 
 .info{
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -199,14 +199,14 @@ ul{
     display: flex;
     background-color: #3882f6;
     color: white;
-    width: 80vw;
+    width: 70vw;
     height: 100px;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    left: calc(50% - 40vw);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    left: calc(50% - 35vw);
+    margin-top: 70px;
+    margin-bottom: 70px;
     border-radius: 10px;
 }
 
